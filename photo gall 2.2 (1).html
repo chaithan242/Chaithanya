@@ -1,0 +1,353 @@
+<html>
+    <head>
+         <title>Photo Gallery</title>
+         <style>
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: whitesmoke;
+        }
+       
+        header {
+            background-image: url('https://cdn.britannica.com/51/194651-050-747F0C18/Interior-National-Gallery-of-Art-Washington-DC.jpg');
+            background-size: cover;
+            background-position: center;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 100px 200px;
+        }
+
+        header h1 {
+            font-size: 50px;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 20px;
+        }
+
+        section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .attractions, .food, .Animals, .travel, .landscapes {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .attractions img, .food img, .Animals img, .travel img, .landscapes img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .card {
+            text-align: center;
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        #contact {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+#contact button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #555;
+}
+
+ footer {
+     background-color: #c1baba;
+     color: black;
+     padding: 20px 0;
+     text-align: center;
+}
+
+footer a {
+    color:black;
+    text-decoration: none;
+     margin: 0 15px;
+ }
+    </style>
+</head>
+<body>
+
+
+    <header>
+        <h1>Frozen Frames</h1>
+        <p>Where every frame tells a story, and every photograph sparks a memory.</p>
+    </header>
+
+    
+    <section id="attractions">
+        <h2>Where dreams are painted.</h2>
+        <div class="attractions">
+            <div class="card">
+                <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR85DLe82Kt2SKZp5JH4KiGYjrOWzbkKV5ZQA&s"alt="eye">
+                <h3>Fluorite - oil painting</h3>
+                <p>Conceptual abstract closeup of an oil painting and palette knife on canvas.</p>
+            </div>
+            <div class="card">
+                <img src="https://as1.ftcdn.net/v2/jpg/03/15/85/98/1000_F_315859830_Tc1xyft2B732Za8zr0vHParzz9LNH5Wb.jpg" alt="adobe">
+                <h3>Ink Landscape </h3>
+                <p>Hand painted art poster.</p>
+            </div>
+            <div class="card">
+                <img src="https://as1.ftcdn.net/v2/jpg/04/30/76/98/1000_F_430769877_6PlzjSr1aSUI5ZzRjHnOojz9CgnP2gLz.jpg" alt="vector">
+                <h3>Abstract Math Art</h3>
+                <p>Geometric marbling gold style texture. Cubism's low-poly backgrounds.</p>
+        </div>
+        <div class="card">
+            <img src="https://as2.ftcdn.net/v2/jpg/07/48/20/55/1000_F_748205526_hWaL5cDuorp1gJJOIievCKQOtl4NXfWr.jpg" alt="emotions">
+                <h3>Minimalist Portrait Art</h3>
+                <p>Focusing on expressive lines and the rawness of human emotion.</p>
+            </div>
+         <div class="card">
+            <img src="https://as1.ftcdn.net/v2/jpg/03/00/07/90/1000_F_300079058_pus0sCg6lfi4y2hxYr2xaOJrjKwF2XLh.jpg" alt="tribal art">
+                 <h3>Tribal Art</h3>
+                 <p>African women silhouettes in national clothes horizontal seamless pattern.</p>
+            </div>
+        <div class="card">
+            <img src="https://as2.ftcdn.net/v2/jpg/04/28/38/81/1000_F_428388108_cWXgwaKcUgSXE4FfhEJ8SrOdpPcDp6zI.jpg" alt="doodles">
+                <h3>Doodle Art</h3>
+                <p>Set of hand drawn doodle circles.</p>
+            </div>
+        <div class="card">
+            <img src="https://as1.ftcdn.net/v2/jpg/01/10/41/94/1000_F_110419437_xC60tITaA94EVod92Q1dohNYl9HlQXlE.jpg" alt="monuments">
+                <h3>Wall Art</h3>
+                <p>Ceiling fresco in Palazzo Barberini, Rome, Italy</p>
+            </div>    
+        </div>
+    </section>
+
+    <section id="food">
+        <h2>Animals: Nature’s Purest Expression.</h2>
+        <div class="food">
+            <div class="card">
+                <img src="https://as2.ftcdn.net/v2/jpg/00/88/81/51/1000_F_88815129_mUGVi4c1uTLAOST9DDyUkxzX7QYTPal1.jpg" alt="golden">
+                <h3>Golden Retriever Puppies</h3>
+                <p>Unconditional love wrapped in golden fur.</p>
+            </div>
+            <div class="card">
+                <img src="https://wallpapers.com/images/hd/aesthetic-animals-wallpaper-q928ofgf1insnbrd.jpg" alt="Cubs">
+                <h3>Cubs</h3>
+                <p>Small in size, but big on adventure—wild and free from the very start.</p>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/1200x/d2/98/53/d2985395c4d77c48c1341f71c13c2906.jpg" alt="dolphin">
+                <h3>Dolphin</h3>
+                <p>Grace in motion, with a heart full of the ocean's joy.</p>
+            </div>
+            <div class="card">
+                <img src="https://i0.pickpik.com/photos/148/612/1009/beautiful-male-peacock-colorful-bird-feather-preview.jpg" alt="peacock">
+                <h3>Peacock</h3>
+                <p>Nature's masterpiece, proudly displaying its vibrant elegance.</p>
+            </div>
+             <div class="card">
+                 <img src="https://i.pinimg.com/736x/a7/cb/6e/a7cb6e28e43193cdbca3b039f094cc7f.jpg" alt="Elephant">
+                 <h3>Elephant</h3>
+                 <p>Majestic and wise, carrying the strength of the wild in every step.</p>
+             </div>
+             <div class="card">
+                <img src="https://i.pinimg.com/564x/db/b9/24/dbb92410804f3b4b4b0534540e7c4f00.jpg" alt="leopard">
+                <h3>Leopard</h3>
+                <p>Stealthy beauty, with spots that tell a story of the wild.</p>
+             </div>
+             <div class="card">
+                <img src="https://images.unsplash.com/photo-1737456589185-135162f1f5f4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDQ0fEpwZzZLaWRsLUhrfHxlbnwwfHx8fHw%3D" alt="sea">
+                <h3>Red Panda</h3>
+                <p>Small, sweet, and full of curiosity—nature’s little adventurer.</p>
+             </div>
+        </div>
+    </section>
+    <section id="Animals">
+        <h2>Flavors that tell a story, each bite a moment of pure joy.</h2>
+        <div class="Animals">
+            <div class="card">
+                <img src="https://i.pinimg.com/474x/1b/60/78/1b6078b5bd51521860a43103b0a6cae5.jpg" alt="pizza">
+                <h3>Pizza</h3>
+                <p>Hot, cheesy, and always worth the slice.</p>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/474x/9e/df/63/9edf63395b618f8a8e9fe70b6355caaa.jpg" alt="sundae">
+                <h3>Ice Cream Sundae</h3>
+                <p>A sweet swirl of joy in every scoop.</p>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/7c/0a/4a/7c0a4aa5872152c8caa44ed9236a4509.jpg" alt="smoothie">
+                <h3>Healthy Smoothie Jars</h3>
+                <p>Blending freshness and flavor in every vibrant sip.</p>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/a3/37/2c/a3372c7ffa1413f3f75de239ef106e7b.jpg" alt="cocktails">
+                <h3>Cocktails</h3>
+                <p>Cheers to colorful concoctions and good times in every glass.</p>
+            </div>
+             <div class="card">
+                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRABJnLc-mGkjw95oD2S2c1wtNXVZdWGTTW2Q&s" alt="coffee">
+                 <h3>Coffee</h3>
+                 <p>Warm, comforting, and the perfect start to any day.</p>
+             </div>
+             <div class="card">
+                <img src="https://wallpapers.com/images/hd/traditional-indian-food-in-flat-lay-photograph-l808i2de2j2bacdi.jpg" alt="indian">
+                <h3>Indian Cuisine</h3>
+                <p>A rich tapestry of flavors, spices, and traditions in every bite.</p>
+             </div>
+             <div class="card">
+                <img src="https://i.pinimg.com/736x/7a/37/6a/7a376a7cf8f80eec310fc1d96a614bab.jpg" alt="cup">
+                <h3>Cupcakes</h3>
+                <p>Sweet little indulgences, topped with a swirl of happiness.</p>
+             </div>
+        </div>
+    </section>
+    <section id="travel">
+        <h2>Collecting memories, one destination at a time.</h2>
+        <div class="travel">
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/5f/e7/70/5fe770ca2da0d7ec542a40d867cd9a85.jpg" alt="manali">
+                <h3>Manali</h3>
+                <p>Where the mountains touch the sky, and serenity echoes through the valleys.</p>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/474x/13/6b/e4/136be46c8527d42ff86aad45bed08e17.jpg" alt="sydney">
+                <h3>Sydney</h3>
+                <p>Sun, sea, and the skyline.</p>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/564x/42/00/cb/4200cb7400479e772ea79d3ddda2aea6.jpg" alt="bali">
+                <h3>Bali</h3>
+                <p>Paradise found in every wave and every breeze.</p>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/550x/cc/d4/3a/ccd43aeefa18a8a73be29a025c38a444.jpg" alt="paris">
+                <h3>Paris</h3>
+                <p>Love, lights, and endless charm.</p>
+            </div>
+             <div class="card">
+                 <img src="https://as2.ftcdn.net/v2/jpg/03/98/20/01/1000_F_398200148_PESPn6DkGl0xXKK4wLM9tEIque1j6LEL.jpg" alt="dubai">
+                 <h3>Dubai</h3>
+                 <p>Where the future meets the desert.</p>
+             </div>
+             <div class="card">
+                <img src="https://t3.ftcdn.net/jpg/02/65/23/70/240_F_265237090_Muthvb72m2POYFjyx7F5UCQLh9JdBtKN.jpg" alt="tokyo">
+                <h3>Tokyo</h3>
+                <p>Where tradition meets tomorrow.</p>
+             </div>
+             <div class="card">
+                <img src="https://media.istockphoto.com/id/1265900812/photo/aerial-view-of-london-and-the-tower-bridge.jpg?s=612x612&w=0&k=20&c=-2j6QgZyeveMcGzuWmgLYqC7zXTkcSBnayuZsDqs5KQ=" alt="london">
+                <h3>London</h3>
+                <p>Where history meets modern hustle, and every street tells a story.</p>
+             </div>
+        </div>
+    </section>
+    <section id="landscapes">
+        <h2>Silent beauty, speaking louder than words.</h2>
+        <div class="landscapes">
+            <div class="card">
+                <img src="https://media.istockphoto.com/id/475070626/photo/mountains-pangong-tso-leh-ladakh-jammu-and-kashmir-india.jpg?s=612x612&w=0&k=20&c=Ecqus-7RRtqjlRoRN4-gz3d9nTKIiO4flZiMqzoiXQM=" alt="Pangong tso (Lake)">
+                <h3>Pangong Tso</h3>
+                <p>Serenity in every shade of blue.</p>
+            </div>
+            <div class="card">
+                <img src="https://media.istockphoto.com/id/670688480/photo/green-tea-plantations-munnar-kerala-india.jpg?s=1024x1024&w=is&k=20&c=dOqP3WxoMTBHiCvOyu09s0c9PKfZoBB4W9lX9swTP7E=" alt="Munnar">
+                <h3>Munnar</h3>
+                <p>Where the clouds kiss the hills and tea leaves paint the landscape.</p>
+            </div>
+            <div class="card">
+                <img src="https://media.istockphoto.com/id/1224021113/photo/indian-cameleers-camel-driver-with-camel-silhouettes-in-dunes-on-sunset-jaisalmer-rajasthan.jpg?s=1024x1024&w=is&k=20&c=yyW-_jyvFx0SkypeM0BViBVxHTgGb5tg7Wd7MUUn04U=" alt="Jaisalmer">
+                <h3>Jaisalmer</h3>
+                <p>Golden sands, ancient forts, and timeless beauty.</p>
+            </div>
+            <div class="card">
+                <img src="https://media.istockphoto.com/id/624183176/photo/terraced-rice-field-in-mu-cang-chai-vietnam.jpg?s=1024x1024&w=is&k=20&c=Gf1mHvC2xMFQrtV4kfEOj6J5c8uY0sBBSBnzZnZsvkw=" alt="Mu Cang Chai">
+                <h3>Mu Cang Chai</h3>
+                <p>Vibrant terraced fields, mist-kissed mountains, and serene beauty.</p>
+            </div>
+             <div class="card">
+                 <img src="https://media.istockphoto.com/id/1324487349/photo/buddhist-stupa-with-bright-blue-sky-and-mountain-background-at-morning-from-flat-angle.jpg?s=1024x1024&w=is&k=20&c=QCv-8SPQ5UUQQAXPG6BtqhK8gq0OQ0fR-hiZ081je0U=" alt="Buddhist stupa">
+                 <h3>Buddhist stupa</h3>
+                 <p>Standing tall with grace and peace.</p>
+             </div>
+             <div class="card">
+                <img src="https://media.istockphoto.com/id/1146517111/photo/taj-mahal-mausoleum-in-agra.jpg?s=1024x1024&w=is&k=20&c=ATqBHzO_cgsU8v6plHxVHTgE8zgK0BfEGzixY6JYg-c=" alt="Taj Mahal">
+                <h3>Taj Mahal</h3>
+                <p>A love story etched in marble.</p>
+             </div>
+             <div class="card">
+                <img src="https://media.istockphoto.com/id/1171962535/photo/srinagar-kashmir.jpg?s=1024x1024&w=is&k=20&c=wmE0tz1jSOQTZ22XjsPAiRxSFTCL2_NShSTwgRWsxZE=" alt=" Kashmir">
+                <h3> Kashmir</h3>
+                <p>Nature's masterpiece, where snow-capped peaks meet lush valleys.</p>
+             </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Frozen Frames. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
